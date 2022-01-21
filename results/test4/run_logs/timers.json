@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1633563719",
+        "python_version": "3.7.11 (default, Jul 27 2021, 07:03:16) \n[Clang 10.0.0 ]",
+        "command_line_arguments": "/Users/suekim/miniconda3/envs/ml/bin/mlagents-learn config/ppo/Paddle.yaml --run-id=test4",
+        "mlagents_version": "0.25.1",
+        "mlagents_envs_version": "0.25.1",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.8.1",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1633563719"
+    },
+    "total": 0.02989572000000007,
+    "count": 1,
+    "self": 0.006801094000000063,
+    "children": {
+        "run_training.setup": {
+            "total": 0.014109090000000046,
+            "count": 1,
+            "self": 0.014109090000000046
+        },
+        "TrainerController.start_learning": {
+            "total": 0.00898553599999996,
+            "count": 1,
+            "self": 0.00016317699999990332,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 0.008585410000000016,
+                    "count": 1,
+                    "self": 0.008585410000000016
+                },
+                "TrainerController._save_models": {
+                    "total": 0.00023694900000004182,
+                    "count": 1,
+                    "self": 0.00023694900000004182
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "Paddle": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results/second_run/Paddle/Paddle-0.onnx",
+                "reward": null,
+                "creation_time": 1642365492.581771
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results/second_run/Paddle.onnx",
+            "reward": null,
+            "creation_time": 1642365492.581771
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.25.1",
+        "torch_version": "1.8.1"
+    }
+}

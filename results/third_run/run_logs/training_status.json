@@ -1,0 +1,23 @@
+{
+    "Normal": {
+        "checkpoints": [
+            {
+                "steps": 192279,
+                "file_path": "results/third_run/Normal/Normal-192279.onnx",
+                "reward": 28.6799955368042,
+                "creation_time": 1642369981.424336
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 192279,
+            "file_path": "results/third_run/Normal.onnx",
+            "reward": 28.6799955368042,
+            "creation_time": 1642369981.424336
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.25.1",
+        "torch_version": "1.8.1"
+    }
+}
