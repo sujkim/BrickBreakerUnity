@@ -1627,3 +1627,27 @@ Received Import Request.
 Start importing Assets/Scenes/2Player.unity using Guid(c025f7fa1d8f849c2ad86213f282ebf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd214a6bf767e7d64272d171167260539') in 0.009745 seconds
   Import took 0.014595 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002167 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2300 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 282.7 MB.
+System memory in use after: 282.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3053.
+Total: 2.419546 ms (FindLiveObjects: 0.432917 ms CreateObjectMapping: 0.077097 ms MarkObjects: 1.821375 ms  DeleteObjects: 0.087468 ms)
+
