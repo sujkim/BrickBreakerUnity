@@ -20,7 +20,7 @@ public class MLagent : Agent
     public GameObject[] bricks;
     public GameObject bricksPrefab, agentBricks;
     public GameManager gameManager;
-    int difficulty;
+
     public NNModel Normal;
     public NNModel Hard;
 
@@ -33,8 +33,7 @@ public class MLagent : Agent
         right_bound = 6.6f;
         ballLocation = rock.transform.localPosition;
         startPaddle = transform.localPosition;
-        // difficulty = PlayerPrefs.GetInt("Difficulty", 1);
-     }
+    }
 
 
     public override void OnEpisodeBegin()
@@ -46,7 +45,6 @@ public class MLagent : Agent
         }
         bricks = GameObject.FindGameObjectsWithTag("Brick");
         collisions = 0;
-        // SetPaddle(difficulty);
 
         /* Use for training */
         // reset the bricks for training
@@ -55,7 +53,7 @@ public class MLagent : Agent
         // }
 
         // Instantiate(bricksPrefab, agentBricks.transform);
-        
+
         numberBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
         bricks = GameObject.FindGameObjectsWithTag("Brick");
 
@@ -93,7 +91,7 @@ public class MLagent : Agent
 
     }
 
-   
+
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
 
@@ -101,7 +99,7 @@ public class MLagent : Agent
         Vector2 controlSignal = Vector2.zero;
         controlSignal.x = actionBuffers.ContinuousActions[0];
 
-        if(!gameManager._isLoading && rock.MLPlay)
+        if (!gameManager._isLoading && rock.MLPlay)
         {
             this.transform.localPosition += new Vector3(controlSignal.x, 0, 0) * Time.deltaTime * speed;
 
@@ -114,7 +112,7 @@ public class MLagent : Agent
                 this.transform.localPosition = new Vector2(right_bound, this.transform.localPosition.y);
             }
         }
-        
+
         // Set Rewards - if rock falls, large penalty
         if (rock.transform.localPosition.y < transform.localPosition.y - 0.2f)
         {
@@ -147,16 +145,5 @@ public class MLagent : Agent
     }
 
 
-    // public void SetPaddle(int difficulty)
-    // {
-    //     switch (difficulty)
-    //     {
-    //         case 1:
-    //             SetModel("Normal", Normal, InferenceDevice.CPU);
-    //             break;
-    //         case 2:
-    //             SetModel("Hard", Hard, InferenceDevice.CPU);
-    //             break;
-    //     }
-    // }
+
 }
